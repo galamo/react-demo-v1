@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import jquery from "jquery";
+import "bootstrap/dist/css/bootstrap.css";
+
 
 import CarList from "./components/car-list/car-list"
 
@@ -27,9 +30,7 @@ class App extends Component {
             <CarList />
           </div>
 
-          <div className="row">
-
-          </div>
+       
         </div>
 
         {/* <CarList listHeader="car list" mainColor="red" /> */}
