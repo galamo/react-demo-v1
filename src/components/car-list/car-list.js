@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { cars } from "../../config/data"
-import { Car } from "../car/car";
+import Car from "../car/car";
 import { uiKeyGen } from "../../config/uiKeygenerator";
 
 export default class CarList extends Component {
