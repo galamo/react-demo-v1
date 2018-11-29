@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CarList from "./components/car-list/car-list"
+
 
 // function CarList(props) {
 
@@ -20,8 +22,14 @@ class App extends Component {
     let header = <h1> Testing application </h1>
     return (
       <div className="App">
-        <div>
-          {header}
+        <div className="container">
+          <div className="row">
+            <CarList />
+          </div>
+
+          <div className="row">
+
+          </div>
         </div>
 
         {/* <CarList listHeader="car list" mainColor="red" /> */}
