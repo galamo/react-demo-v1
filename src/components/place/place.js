@@ -12,9 +12,9 @@ export default class Place extends Component {
         this.handleInputChange = this.handleInputChange.bind(this)
     }
 
-    handleInputChange(e){
+    handleInputChange(e) {
         this.setState({
-            input:e.target.value
+            input: e.target.value
         })
     }
 
@@ -50,9 +50,9 @@ export default class Place extends Component {
                     })
                 }} />
 
-                <input value={this.state.input} onChange={this.handleInputChange}  />
-                
-               
+                <input value={this.state.input} onChange={this.handleInputChange} />
+
+
 
             </div>
         )

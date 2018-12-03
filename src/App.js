@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import PlacesList from "./components/places-list/places-list";
 import FavoriteList from './components/favorites/favorites';
-
+import Search from "./components/search/search";
 
 
 
@@ -31,8 +31,8 @@ class App extends Component {
           return place.place != selectedPlace.place
         })
       }))
-    
-     
+
+
 
     }
   }
@@ -43,6 +43,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
+          <div>
+            <Search dispachText={(text) => {
+              alert(text)
+            }} />
+          </div>
           <div>
             <PlacesList handleClick={this.addOrRemove} />
           </div>
