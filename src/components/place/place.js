@@ -18,6 +18,10 @@ export default class Place extends Component {
         })
     }
 
+
+
+
+
     render() {
         console.log("render? ")
         return (
